@@ -24,7 +24,7 @@ function lift_cell_reactive(expr)
     end
     obs_vars = collect_globals!(cell_outputs, body, var)
     varname = var === nothing ? gensym("tmp") : var
-    varesc = esc(varname)
+    varesc = (varname)
     lifted = quote
         function f($(obs_vars...))
             $(body)
@@ -32,8 +32,8 @@ function lift_cell_reactive(expr)
         if isdefined(Main, $(QuoteNode(varname)))
             $(varesc)[] = f(getindex.(($(obs_vars...),))...)
         else
-            $(varesc) = Observable(f(getindex.(($(obs_vars...),))...))
-            onany($(obs_vars...)) do args...
+            $(varesc) = ReactiveRuntime.Observable(f(getindex.(($(obs_vars...),))...))
+            ReactiveRuntime.onany($(obs_vars...)) do args...
                 $(varesc)[] = f(args...)
             end
         end
