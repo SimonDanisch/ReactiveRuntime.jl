@@ -3,6 +3,12 @@ uuid = "a5891366-6298-4661-966f-ef486e936dae"
 authors = ["SimonDanisch <sdanisch@gmail.com>"]
 version = "0.1.0"
 
+[deps]
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+Observables = "510215fc-4207-5dde-b226-833fc4488ee2"
+WebIO = "0f1e0344-ec1d-5b48-a673-e5cf874b6c29"
+WebSockets = "104b5d7c-a370-577a-8038-80a2059c5097"
+
 [compat]
 julia = "1"
 
