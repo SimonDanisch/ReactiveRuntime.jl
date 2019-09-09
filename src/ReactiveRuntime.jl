@@ -5,7 +5,7 @@ using WebSockets, WebIO, MacroTools, Observables
 const cell_outputs = Set{Symbol}()
 
 function collect_globals!(globals, expr, current)
-    vars = Symbol[]
+    vars = Set{Symbol}()
     MacroTools.postwalk(expr) do var
         var isa Symbol && var != current && var in globals && push!(vars, var)
     end
