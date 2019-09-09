@@ -45,4 +45,9 @@ function lift_cell_reactive(expr)
     return lifted
 end
 
+
+macro cell(expr)
+    return esc(lift_cell_reactive(expr))
+end
+
 end # module
