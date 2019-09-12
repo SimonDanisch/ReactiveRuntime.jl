@@ -7,6 +7,6 @@
 
 
 Can be used for Reactive documents:
+[![reactive](https://user-images.githubusercontent.com/1010467/64777431-6df42300-d55a-11e9-816d-706213da43cf.gif)](https://nextjournal.com/a/LcxrzLVYHPQu3SP31fUFU?token=TZu6NLRZSFy6u9NdzSMnvN)
 
-![[notebook](https://nextjournal.com/a/LcxrzLVYHPQu3SP31fUFU?token=TZu6NLRZSFy6u9NdzSMnvN)](https://user-images.githubusercontent.com/1010467/64777431-6df42300-d55a-11e9-816d-706213da43cf.gif)
 [notebook](https://nextjournal.com/a/LcxrzLVYHPQu3SP31fUFU?token=TZu6NLRZSFy6u9NdzSMnvN)
