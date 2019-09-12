@@ -47,6 +47,7 @@ end
 
 
 macro cell(expr)
+    expr = macroexpand(__module__, expr)
     return esc(lift_cell_reactive(expr))
 end
 
