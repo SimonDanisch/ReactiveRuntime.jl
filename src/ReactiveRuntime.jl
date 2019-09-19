@@ -1,6 +1,36 @@
 module ReactiveRuntime
 
-using WebSockets, WebIO, MacroTools, Observables
+using WebSockets, WebIO, MacroTools, Observables, JSServe
+using JSServe.DOM
+using JSServe: @js_str
+
+Base.write(io::JSServe.JavascriptSerializer, x::Array) = write(JSServe.io_object(io), x)
+function JSServe.jsrender(session::JSServe.Session, obs::Observable)
+    html = map(obs) do value
+        JSServe.repr_richest(value)
+    end
+    dom = DOM.div(html[])
+    JSServe.onjs(session, html, js"""
+        function (html){
+            var dom = $(dom);
+            if(dom){
+                dom.innerHTML = html;
+                return true;
+            }else{
+                //deregister the callback if the observable dom is gone
+                return false;
+            }
+        }
+    """)
+    return dom
+end
+function Base.show(io::IO, m::MIME"application/vnd.webio.application+html", x::Observable)
+    s = JSServe.with_session() do session
+        JSServe.jsrender(session, x)
+    end
+    show(io, m, s)
+end
+
 
 const cell_outputs = Set{Symbol}()
 
