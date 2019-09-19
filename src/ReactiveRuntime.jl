@@ -1,6 +1,6 @@
 module ReactiveRuntime
 
-using WebSockets, WebIO, MacroTools, Observables, JSServe
+using WebSockets, MacroTools, Observables, JSServe
 using JSServe.DOM
 using JSServe: @js_str
 
