@@ -4,7 +4,7 @@ using WebSockets, MacroTools, Observables, JSServe
 using JSServe.DOM
 using JSServe: @js_str
 
-Base.write(io::JSServe.JavascriptSerializer, x::Array) = write(JSServe.io_object(io), x)
+
 
 function Base.show(io::IO, m::MIME"application/vnd.webio.application+html", x::Observable)
     s = JSServe.with_session() do session
