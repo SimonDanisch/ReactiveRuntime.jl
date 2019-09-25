@@ -3,7 +3,7 @@ module ReactiveRuntime
 using WebSockets, MacroTools, Observables, JSServe
 using JSServe.DOM
 using JSServe: @js_str
-
+export @variable
 
 
 function Base.show(io::IO, m::MIME"application/vnd.webio.application+html", x::Observable)
@@ -91,7 +91,7 @@ function lift_cell_reactive(expr)
 end
 
 
-macro cell(expr)
+macro variable(expr)
     expr = macroexpand(__module__, expr)
     return esc(lift_cell_reactive(expr))
 end
