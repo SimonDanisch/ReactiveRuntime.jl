@@ -7,6 +7,12 @@
 
 
 Can be used for Reactive documents:
-[![reactive](https://user-images.githubusercontent.com/1010467/64777431-6df42300-d55a-11e9-816d-706213da43cf.gif)](https://nextjournal.com/a/LcxrzLVYHPQu3SP31fUFU?token=TZu6NLRZSFy6u9NdzSMnvN)
 
-[notebook](https://nextjournal.com/a/LcxrzLVYHPQu3SP31fUFU?token=TZu6NLRZSFy6u9NdzSMnvN)
+https://nextjournal.com/sdanisch/reactiveruntime
+
+[![reactive](https://nextjournal.com/data/QmS4xGkvbyGqWV9egzTDPSCDTxzLTWf5cKw1YsUNcNjgnQ?content-type=image%2Fgif&filename=ball_wall.gif)](https://nextjournal.com/sdanisch/reactiveruntime)
+
+
+https://nextjournal.com/sdanisch/reactive-mimi-demo
+
+[![](https://nextjournal.com/data/Qmc7FtfBSnXXvT3RoPGS6NtsBXE2McViMc2SAzcHoXUVDQ?content-type=image%2Fgif&filename=explore_climate.gif)](https://nextjournal.com/sdanisch/reactive-mimi-demo)
