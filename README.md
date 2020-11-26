@@ -16,3 +16,8 @@ https://nextjournal.com/sdanisch/reactiveruntime
 https://nextjournal.com/sdanisch/reactive-mimi-demo
 
 [![](https://nextjournal.com/data/Qmc7FtfBSnXXvT3RoPGS6NtsBXE2McViMc2SAzcHoXUVDQ?content-type=image%2Fgif&filename=explore_climate.gif)](https://nextjournal.com/sdanisch/reactive-mimi-demo)
+
+## Sponsors
+
+<img src="https://github.com/JuliaPlots/Makie.jl/blob/master/assets/BMBF_gefoerdert_2017_en.jpg?raw=true" width="300"/>
+Förderkennzeichen: 01IS10S27, 2020
